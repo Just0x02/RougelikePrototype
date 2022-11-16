@@ -2,7 +2,8 @@ CPP = g++
 
 OUT_FILE = ./main
 
-CPP_OPTS = -Wall
+CSTD = c++20
+CPP_OPTS := -Wall -cstd=$(CSTD)
 
 LIB = -L ./lib/ -lsfml-graphics -lsfml-window -lsfml-system -lfreeglut -lopengl32
 INCLUDE = -I ./include/
